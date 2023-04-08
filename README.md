@@ -62,6 +62,7 @@ there is two potential errors might happen
 
 - a new database is created with extension `.mdf` and has all tables you created on this project.
 	 - the solution is easy just change the connection string in the constructor of the _`ApplicationDbContext`_ class which you will find in  _`models/Identity.cs`_, replace `"DefaultConnection"` string to the **_connection string_** of your existing database that you work with.
+	 
 	 ![database](./db.png "database properties") ![properties](./prop.png "copy connection str")
 	   
 - a new database is created with extension `.sdf` and can't open it to see the tables.
